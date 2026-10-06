@@ -1,0 +1,296 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: var(--darkteal);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+main {
+    width: 100%;
+    height: auto;
+    background: linear-gradient(180deg,var(--midteal) 0%, var(--lightteal) 100%);
+    overflow: hidden;
+}
+
+
+/* Nav */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    z-index: 1;
+    }
+
+#home {
+    height: 90vh;
+}
+
+#svg-logo {
+    height: 5rem;
+    margin-top: -1rem;
+    max-width: 100rem;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    z-index: 3;
+}
+
+.topnav {
+	display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 1em;
+    width: 100%;
+}
+
+.topnav ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-between;
+    align-items: start;
+    width: 100%;
+}
+
+.topnav li {
+    margin-right: 2em;
+    margin-left: 2em;
+    flex-shrink: 0;
+}
+
+.topnav button {
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: x-large;
+    text-transform: uppercase;
+    margin: 0;
+    padding-left: 2em;
+    padding-right: 2em;
+    max-height: 2em;
+    border: none;
+    align-self: end;
+    background-color: white;
+}
+
+.topnav img {
+    max-width: 2rem;
+}
+
+.hamburger {
+    display: none;
+}
+#arrow {
+    width: 1em;
+}
+#arrowup {
+    width: 1em;
+    rotate: 180deg;
+}
+
+.expandable {
+    display: none;
+}
+
+.expanded-explore {
+    display: block;
+}
+
+#expand-submenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    order: 3;
+}
+
+#submenu {
+    position: relative;
+    top: -13.25rem;
+}
+
+#submenu ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    align-items: center;
+    background-color: white;
+    
+}
+
+#submenu li {
+    margin: 0;
+    margin-top: .5em;
+    font-size: large;
+    padding-right: 1em;
+}
+
+#submenu a:link,
+#submenu a:visited {
+    margin: 0;
+    margin-top: .5em;
+    font-size: medium;
+}
+
+ul a:link,
+ul a:visited {
+    color: black;
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: x-large;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+#designer {
+    order:1;
+}
+#home-logo {
+    order:2;
+}
+
+
+@media screen and (max-width: 800px) {
+    .topnav {
+        justify-content: end;
+    }
+    .default ul {
+        display: none;
+    }
+    .hamburger {
+        display: block;
+    }
+
+    .expanded ul {
+        display: flex;
+        flex-direction: column;
+        z-index: 6;
+        align-items: center;
+    }
+    .expanded ul button {
+        font-family: sans-serif;
+        font-weight: 700;
+        font-size: x-large;
+        margin: 0;
+        padding: 0;
+        max-height: 2em;
+    }
+    .expanded li {
+        margin-bottom: 1em;
+    }
+
+    #submenu-list {
+        position: relative;
+        top: 13rem;
+    }
+
+    #home-logo {
+        order: 0;
+    }
+    #burger {
+        order: 2;
+        padding: 0;
+        align-self: start;
+    }
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: .8fr 1fr .8fr 1fr 1fr;
+    grid-template-rows: .5fr 1fr 1fr;
+}
+
+.home {
+    grid-area: 1 / 1 / span 3 /span 5;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    height: auto;
+    width: 100%;
+}
+
+.home img {
+    grid-area: 1 / 1 / 4 / 6;
+}
+
+#craftroom {
+    grid-area: 2 / 2 / span 1 / span 1;
+    z-index: 10;
+}
+#craftroom:hover ~ #craftroom-window {
+    z-index: -1;
+}
+
+#hall {
+    grid-area: 2 / 3 / span 1 / span 1;
+    z-index: 10;
+}
+#hall:hover ~ #hall-window {
+    z-index: -1;
+}
+
+#study {
+    grid-area: 2 / 4 / span 1 / span 1;
+    z-index: 10;
+}
+#study:hover ~ #study-window {
+    z-index: -1;
+}
+
+#kitchen {
+    grid-area: 3 / 2 / span 1 / span 1;
+    z-index: 10;
+}
+#kitchen:hover ~ #kitchen-window {
+    z-index: -1;
+}
+
+#foyer {
+    grid-area: 3 / 3 / span 1 / span 1;
+    z-index: 10;
+}
+#foyer:hover ~ #closed-door {
+    z-index: -1;
+}
+
+#garage {
+    grid-area: 3 / 4 / span 1 / span 1;
+    z-index: 10;
+}
+#garage:hover ~ #garage-door {
+    z-index: -1;
+}
+#background {
+    z-index: 0;
+}
+
+.house {
+    z-index: 2;
+}
+
+#come {
+    z-index: 3;
+    grid-area: 2 / 1 / span 1 / span 1;
+    width: 90%;
+    /* align-self: center; */
+    justify-self: end;
+}
+
+#work {
+    z-index: 3;
+    grid-area: 2 / 5 / span 1 / span 1;
+    width: 95%;
+    align-self: end;
+    padding-bottom: 1rem;
+}
+
+@keyframes cloudAnimation {
+    0% {transform: translate(30%, 0);}
+    100% {transform: translate(-30%, 0);}
+}
+.cloud {
+    animation: cloudAnimation 20s linear infinite;
+    z-index: 1;
+}
