@@ -1,9 +1,6 @@
 body {
     margin: 0;
     min-height: 100vh;
-    background: var(--darkteal);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
 }
 
 main {
@@ -73,12 +70,11 @@ nav {
     padding-right: 2em;
     max-height: 2em;
     border: none;
-    align-self: end;
-    background-color: white;
+    background-color: rgba(0,0,0,0);
 }
 
 .topnav img {
-    max-width: 2rem;
+    max-width: 3rem;
 }
 
 .hamburger {
@@ -215,9 +211,16 @@ ul a:visited {
     grid-area: 1 / 1 / 4 / 6;
 }
 
+.transparent {
+    object-fit: contain;
+    max-width: 100%;
+    max-height: 100%;
+}
+
 #craftroom {
     grid-area: 2 / 2 / span 1 / span 1;
     z-index: 10;
+    max-height: 100%;
 }
 #craftroom:hover ~ #craftroom-window {
     z-index: -1;
@@ -226,6 +229,7 @@ ul a:visited {
 #hall {
     grid-area: 2 / 3 / span 1 / span 1;
     z-index: 10;
+    max-height: 100%;
 }
 #hall:hover ~ #hall-window {
     z-index: -1;
@@ -234,6 +238,7 @@ ul a:visited {
 #study {
     grid-area: 2 / 4 / span 1 / span 1;
     z-index: 10;
+    max-height: 100%;
 }
 #study:hover ~ #study-window {
     z-index: -1;
@@ -242,6 +247,7 @@ ul a:visited {
 #kitchen {
     grid-area: 3 / 2 / span 1 / span 1;
     z-index: 10;
+    max-height: 100%;
 }
 #kitchen:hover ~ #kitchen-window {
     z-index: -1;
@@ -250,6 +256,7 @@ ul a:visited {
 #foyer {
     grid-area: 3 / 3 / span 1 / span 1;
     z-index: 10;
+    max-height: 100%;
 }
 #foyer:hover ~ #closed-door {
     z-index: -1;
@@ -258,6 +265,7 @@ ul a:visited {
 #garage {
     grid-area: 3 / 4 / span 1 / span 1;
     z-index: 10;
+    max-height: 100%;
 }
 #garage:hover ~ #garage-door {
     z-index: -1;
@@ -274,16 +282,16 @@ ul a:visited {
     z-index: 3;
     grid-area: 2 / 1 / span 1 / span 1;
     width: 90%;
-    /* align-self: center; */
+    align-self: start;
     justify-self: end;
 }
 
 #work {
     z-index: 3;
     grid-area: 2 / 5 / span 1 / span 1;
-    width: 95%;
-    align-self: end;
-    padding-bottom: 1rem;
+    width: 90%;
+    align-self: start;
+    padding-left: 5%;
 }
 
 @keyframes cloudAnimation {
