@@ -198,6 +198,9 @@ ul a:visited {
     grid-template-columns: .8fr 1fr .8fr 1fr 1fr;
     grid-template-rows: .5fr 1fr 1fr;
 }
+.hero div {
+    align-self: center;
+}
 
 .home {
     grid-area: 1 / 1 / span 3 /span 5;
@@ -216,6 +219,7 @@ ul a:visited {
     object-fit: contain;
     max-width: 100%;
     max-height: 100%;
+    align-self: center;
 }
 
 #craftroom {
@@ -231,6 +235,7 @@ ul a:visited {
     grid-area: 2 / 3 / span 1 / span 1;
     z-index: 10;
     max-height: 100%;
+    align-self: end;
 }
 #hall:hover ~ #hall-window {
     z-index: -1;
@@ -258,6 +263,7 @@ ul a:visited {
     grid-area: 3 / 3 / span 1 / span 1;
     z-index: 10;
     max-height: 100%;
+    align-self: end;
 }
 #foyer:hover ~ #closed-door {
     z-index: -1;
@@ -267,6 +273,7 @@ ul a:visited {
     grid-area: 3 / 4 / span 1 / span 1;
     z-index: 10;
     max-height: 100%;
+    align-self: end;
 }
 #garage:hover ~ #garage-door {
     z-index: -1;
@@ -295,11 +302,3 @@ ul a:visited {
     padding-left: 5%;
 }
 
-@keyframes cloudAnimation {
-    0% {transform: translate(30%, 0);}
-    100% {transform: translate(-30%, 0);}
-}
-.cloud {
-    animation: cloudAnimation 20s linear infinite;
-    z-index: 1;
-}
