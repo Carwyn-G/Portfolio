@@ -1,0 +1,272 @@
+.hero {
+    display: grid;
+    grid-template-columns: .5fr repeat(23, 1fr) .5fr;
+    grid-template-rows: .5fr 1fr 1fr;
+}
+.hero div {
+    align-self: center;
+}
+
+.craft {
+    grid-area: 1 / 1 / span 3 /span 25;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    height: auto;
+    width: 100%;
+}
+
+.craft img {
+    grid-area: 1 / 1 / 4 / 6;
+}
+
+.transparent {
+    object-fit: contain;
+    max-width: 100%;
+    max-height: 100%;
+    align-self: center;
+}
+
+#postcard-1 {
+    grid-area: 1 / 2 / span 1 / span 1;
+    z-index: 10;
+}
+#postcard-1:hover ~ #card-1 {
+    transform-origin: 4% 3%;
+    transform: rotate(10deg);
+}
+
+#postcard-2 {
+    grid-area: 1 / 3 / span 1 / span 1;
+    z-index: 10;
+}
+#postcard-2:hover ~ #card-2 {
+    transform-origin: 8% 5%;
+    transform: rotate(10deg);
+}
+
+#postcard-3 {
+    grid-area: 1 / 4 / span 1 / span 1;
+    z-index: 10;
+}
+#postcard-3:hover ~ #card-3 {
+    transform-origin: 13% 6%;
+    transform: rotate(10deg);
+}
+
+#postcard-4 {
+    grid-area: 1 / 5 / span 1 / span 1;
+    z-index: 10;
+}
+#postcard-4:hover ~ #card-4 {
+    transform-origin: 17% 6%;
+    transform: rotate(10deg);
+}
+
+#postcard-5 {
+    grid-area: 1 / 6 / span 1 / span 1;
+    z-index: 10;
+}
+#postcard-5:hover ~ #card-5 {
+    transform-origin: 21% 7%;
+    transform: rotate(10deg);
+}
+
+#postcard-6 {
+    grid-area: 1 / 7 / span 1 / span 1;
+    z-index: 10;
+}
+#postcard-6:hover ~ #card-6 {
+    transform-origin: 25% 8%;
+    transform: rotate(10deg);
+}
+
+#postcard-7 {
+    grid-area: 1 / 8 / span 1 / span 1;
+    z-index: 10;
+}
+#postcard-7:hover ~ #card-7 {
+    transform-origin: 29% 8%;
+    transform: rotate(10deg);
+}
+
+#postcard-8 {
+    grid-area: 1 / 9 / span 1 / span 1;
+    z-index: 10;
+}
+#postcard-8:hover ~ #card-8 {
+    transform-origin: 34% 8%;
+    transform: rotate(10deg);
+}
+
+#postcard-9 {
+    grid-area: 1 / 10 / span 1 / span 1;
+    z-index: 10;
+}
+#postcard-9:hover ~ #card-9 {
+    transform-origin: 37% 8%;
+    transform: rotate(10deg);
+}
+
+#postcard-10 {
+    grid-area: 1 / 11 / span 1 / span 1;
+    z-index: 10;
+}
+#postcard-10:hover ~ #card-10 {
+    transform-origin: 41% 9%;
+    transform: rotate(10deg);
+}
+
+#postcard-11 {
+    grid-area: 1 / 12 / span 1 / span 1;
+    z-index: 10;
+}
+#postcard-11:hover ~ #card-11 {
+    transform-origin: 45% 9%;
+    transform: rotate(10deg);
+}
+
+#postcard-12 {
+    grid-area: 1 / 13 / span 1 / span 1;
+    z-index: 10;
+}
+#postcard-12:hover ~ #card-12 {
+    transform-origin: 50% 9%;
+    transform: rotate(10deg);
+}
+
+#postcard-13 {
+    grid-area: 1 / 14 / span 1 / span 1;
+    z-index: 10;
+}
+#postcard-13:hover ~ #card-13 {
+    transform-origin: 53% 9%;
+    transform: rotate(10deg);
+}
+
+#postcard-14 {
+    grid-area: 1 / 15 / span 1 / span 1;
+    z-index: 10;
+}
+#postcard-14:hover ~ #card-14 {
+    transform-origin: 57% 9%;
+    transform: rotate(10deg);
+}
+
+#postcard-15 {
+    grid-area: 1 / 16 / span 1 / span 1;
+    z-index: 10;
+}
+#postcard-15:hover ~ #card-15 {
+    transform-origin: 61% 9%;
+    transform: rotate(10deg);
+}
+
+#postcard-16 {
+    grid-area: 1 / 17 / span 1 / span 1;
+    z-index: 10;
+}
+#postcard-16:hover ~ #card-16 {
+    transform-origin: 65% 9%;
+    transform: rotate(10deg);
+}
+
+#postcard-17 {
+    grid-area: 1 / 18 / span 1 / span 1;
+    z-index: 10;
+}
+#postcard-17:hover ~ #card-17 {
+    transform-origin: 70% 9%;
+    transform: rotate(10deg);
+}
+
+#postcard-18 {
+    grid-area: 1 / 19 / span 1 / span 1;
+    z-index: 10;
+}
+#postcard-18:hover ~ #card-18 {
+    transform-origin: 74% 8.5%;
+    transform: rotate(10deg);
+}
+
+#postcard-19 {
+    grid-area: 1 / 20 / span 1 / span 1;
+    z-index: 10;
+}
+#postcard-19:hover ~ #card-19 {
+    transform-origin: 78% 8%;
+    transform: rotate(10deg);
+}
+
+#postcard-20 {
+    grid-area: 1 / 21 / span 1 / span 1;
+    z-index: 10;
+}
+#postcard-20:hover ~ #card-20 {
+    transform-origin: 82% 8%;
+    transform: rotate(10deg);
+}
+
+#postcard-21 {
+    grid-area: 1 / 22 / span 1 / span 1;
+    z-index: 10;
+}
+#postcard-21:hover ~ #card-21 {
+    transform-origin: 86% 7%;
+    transform: rotate(10deg);
+}
+
+#postcard-22 {
+    grid-area: 1 / 23 / span 1 / span 1;
+    z-index: 10;
+}
+#postcard-22:hover ~ #card-22 {
+    transform-origin: 91% 5%;
+    transform: rotate(10deg);
+}
+
+#postcard-23 {
+    grid-area: 1 / 24 / span 1 / span 1;
+    z-index: 10;
+}
+#postcard-23:hover ~ #card-23 {
+    transform-origin: 95% 4%;
+    transform: rotate(10deg);
+}
+
+#lamp {
+    grid-area: 2 / 2 / span 1 / span 1;
+    z-index: 10;
+    align-self: end;
+}
+#lamp img {
+    object-fit: fill;
+    margin-bottom: 5%;
+}
+
+#lamp:hover ~ #lamplight {
+    z-index: 5;
+}
+#lamplight {
+    z-index: -1;
+}
+
+
+@keyframes armWave {
+    0% {transform: rotate(-5deg);}
+    100% {transform: rotate(5deg);}
+}
+#arm {
+    transform-origin: 44% 50%;
+    animation: armWave 2s linear infinite alternate;
+}
+
+@keyframes headTic {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(-5deg);}
+}
+
+#head {
+    transform-origin: 49% 39%;
+    animation: headTic 3s linear infinite alternate;
+}
