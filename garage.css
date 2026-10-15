@@ -1,0 +1,26 @@
+.hero {
+    display: grid;
+    grid-template-columns: 1.5fr 2fr 3fr 2fr;
+    grid-template-rows: 1.8fr 1fr 1fr;
+}
+
+.garage {
+    grid-area: 1 / 1 / span 3 /span 4;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    height: auto;
+    width: 100%;
+}
+
+#screen {
+    grid-area: 1 / 3 / 2 / 4;
+}
+
+#door {
+    grid-area: 1 / 1 / 3 / 2;
+}
+
+#bike {
+    grid-area: 2 / 4 / 4 / 5;
+}

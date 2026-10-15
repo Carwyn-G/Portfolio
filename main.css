@@ -202,28 +202,6 @@ ul a:visited {
     }
 }
 
-.hero {
-    display: grid;
-    grid-template-columns: .8fr 1fr .8fr 1fr 1fr;
-    grid-template-rows: .5fr 1fr 1fr;
-}
-.hero div {
-    align-self: center;
-}
-
-.home {
-    grid-area: 1 / 1 / span 3 /span 5;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    height: auto;
-    width: 100%;
-}
-
-.home img {
-    grid-area: 1 / 1 / 4 / 6;
-}
-
 .transparent {
     object-fit: contain;
     max-width: 100%;
@@ -231,85 +209,6 @@ ul a:visited {
     align-self: center;
 }
 
-#craftroom {
-    grid-area: 2 / 2 / span 1 / span 1;
-    z-index: 10;
-    max-height: 100%;
-}
-#craftroom:hover ~ #craftroom-window {
-    z-index: -1;
-}
-
-#hall {
-    grid-area: 2 / 3 / span 1 / span 1;
-    z-index: 10;
-    max-height: 100%;
-    align-self: end;
-}
-#hall:hover ~ #hall-window {
-    z-index: -1;
-}
-
-#study {
-    grid-area: 2 / 4 / span 1 / span 1;
-    z-index: 10;
-    max-height: 100%;
-}
-#study:hover ~ #study-window {
-    z-index: -1;
-}
-
-#kitchen {
-    grid-area: 3 / 2 / span 1 / span 1;
-    z-index: 10;
-    max-height: 100%;
-}
-#kitchen:hover ~ #kitchen-window {
-    z-index: -1;
-}
-
-#foyer {
-    grid-area: 3 / 3 / span 1 / span 1;
-    z-index: 10;
-    max-height: 100%;
-    align-self: end;
-}
-#foyer:hover ~ #closed-door {
-    z-index: -1;
-}
-
-#garage {
-    grid-area: 3 / 4 / span 1 / span 1;
-    z-index: 10;
-    max-height: 100%;
-    align-self: end;
-}
-#garage:hover ~ #garage-door {
-    z-index: -1;
-}
-#background {
-    z-index: 0;
-}
-
-.house {
-    z-index: 2;
-}
-
-#come {
-    z-index: 3;
-    grid-area: 2 / 1 / span 1 / span 1;
-    width: 90%;
-    align-self: start;
-    justify-self: end;
-}
-
-#work {
-    z-index: 3;
-    grid-area: 2 / 5 / span 1 / span 1;
-    width: 90%;
-    align-self: start;
-    padding-left: 5%;
-}
 
 h1 {
     font-family: sans-serif;

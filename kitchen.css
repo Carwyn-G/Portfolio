@@ -1,0 +1,154 @@
+.hero {
+    display: grid;
+    grid-template-columns: .825fr .5fr .5fr .6fr .5fr .5fr .5fr 1fr;
+    grid-template-rows: .5fr .5fr .75fr .5fr .5fr;
+}
+
+.kitchen {
+    grid-area: 1 / 1 / span 5 /span 8;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    height: auto;
+    width: 100%;
+}
+
+.kitchen img {
+    grid-area: 1 / 1 / 6 / 9;
+}
+
+#fridge {
+    grid-area: 3 / 1 / 5 / 2;
+    height: 100%;
+    z-index: 10;
+}
+#fridge:hover ~ #mag-1 {
+    transform: translate(0,0);
+}
+#fridge:hover ~ #mag-2 {
+    transform: translate(0,0);
+}
+#fridge:hover ~ #mag-3 {
+    transform: translate(0,0);
+}
+#fridge:hover ~ #mag-4 {
+    transform: translate(0,0);
+}
+#fridge:hover ~ #mag-5 {
+    transform: translate(0,0);
+}
+#fridge:hover ~ #mag-6 {
+    transform: translate(0,0);
+}
+#fridge:hover ~ #mag-7 {
+    transform: translate(0,0);
+}
+#fridge:hover ~ #mag-8 {
+    transform: translate(0,0);
+}
+#fridge:hover ~ #mag-9 {
+    transform: translate(0,0);
+}
+#fridge:hover ~ #mag-10 {
+    transform: translate(0,0);
+}
+
+#cabinet-3 {
+    grid-area: 4 / 5 / 5 / 6;
+    z-index: 10;
+}
+#cabinet-3:hover ~ #cab-3 {
+    z-index: -1;
+}
+
+#cabinet-5 {
+    grid-area: 4 / 7 / 5 / 8;
+    z-index: 10;
+}
+#cabinet-5:hover ~ #cab-5 {
+    z-index: -1;
+}
+
+#TL-cabinet {
+    grid-area: 2 / 2 / 3 / 3;
+    z-index: 10;
+}
+#TL-cabinet:hover ~ #topleft-cab {
+    z-index: -1;
+}
+
+#TR-cabinet {
+    grid-area: 2 / 3 / 3 / 4;
+    z-index: 10;
+}
+#TR-cabinet:hover ~ #topright-cab {
+    z-index: -1;
+}
+
+
+#sink {
+    grid-area: 3 / 7 / 4 / 8;
+    z-index: 10;
+}
+#sink:hover ~ #sink-water {
+    z-index: 1;    
+    animation: waterFlow 1s linear infinite alternate;
+}
+
+
+#mag-1 {
+    transform: translate(10%, 30%);
+}
+
+#mag-2 {
+    transform: translate(2%, 25%);
+}
+
+#mag-3 {
+    transform: translate(-2%, 55%);
+}
+
+#mag-4 {
+    transform: translate(6%, 45%);
+}
+
+#mag-5 {
+    transform: translate(-5%, 30%);
+}
+
+#mag-6 {
+    transform: translate(-5%, 40%);
+}
+
+#mag-7 {
+    transform: translate(-2%, 40%);
+}
+
+#mag-8 {
+    transform: translate(-3%, 46%);
+}
+
+#mag-9 {
+    transform: translate(0%, 22%);
+}
+
+#mag-10 {
+    transform: translate(-4%, 30%);
+}
+
+@keyframes waterFlow {
+    0% {transform: rotateY(0deg);}
+    50% {transform: rotateY(40deg);}
+}
+#sink-water {
+    z-index: -1;
+    transform-origin: 71.7% 51%;
+}
+
+#hour {
+    transform-origin: 77.86% 12.5%;
+}
+
+#minute {
+    transform-origin: 77.86% 12.5%;
+}
