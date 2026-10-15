@@ -1,0 +1,60 @@
+.hero {
+    display: grid;
+    grid-template-columns: 1fr .55fr .5fr 2.75fr .5fr .4fr .6fr;
+    grid-template-rows: 1fr .5fr 1fr 1fr;
+}
+
+.hall {
+    grid-area: 1 / 1 / span 4 /span 7;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    height: auto;
+    width: 100%;
+}
+
+#bedroom {
+    z-index: 10;
+    grid-area: 1 / 1 / 4 / 2;
+}
+#bedroom:hover ~ #closed-bed {
+    z-index: -1;
+}
+
+#bathroom {
+    z-index: 10;
+    grid-area: 1 / 7 / 4 / 8;
+}
+#bathroom:hover ~ #closed-bath {
+    z-index: -1;
+}
+
+@keyframes growPlant {
+    0% {transform: scale(100%);}
+    100% {transform: scale(145%);}
+}
+#monstera-plant {
+    transform-origin: 29% 63.5%;
+}
+
+#fern-plant {
+    transform-origin: 80% 65.3%;
+}
+
+#monstera {
+    z-index: 10;
+    grid-area: 3 / 3 / 4 / 4;
+}
+#monstera:hover ~ #monstera-plant {    
+    animation: growPlant 2s ease-in 1 forwards;
+}
+
+#fern {
+    z-index: 10;
+    grid-area: 3 / 5 / 4 / 6;
+}
+#fern:hover ~ #fern-plant {    
+    animation: growPlant 2s ease-in 1 forwards;
+}
+
+
