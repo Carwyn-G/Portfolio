@@ -230,3 +230,7 @@ p {
     margin-inline: auto;
     text-indent: 1em;
 }
+
+footer {
+    font-size: small;
+}

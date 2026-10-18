@@ -33,28 +33,29 @@
     0% {transform: scale(100%);}
     100% {transform: scale(145%);}
 }
-#monstera-plant {
-    transform-origin: 29% 63.5%;
-}
-
-#fern-plant {
-    transform-origin: 80% 65.3%;
-}
 
 #monstera {
     z-index: 10;
     grid-area: 3 / 3 / 4 / 4;
+    align-self: center;
 }
-#monstera:hover ~ #monstera-plant {    
+#monstera-grow {
+    transform-origin: 29% 63.5%;
     animation: growPlant 2s ease-in 1 forwards;
 }
 
 #fern {
     z-index: 10;
     grid-area: 3 / 5 / 4 / 6;
+    align-self: center;
 }
-#fern:hover ~ #fern-plant {    
+#fern-grow {    
+    transform-origin: 80% 65.3%;
     animation: growPlant 2s ease-in 1 forwards;
 }
 
-
+button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}

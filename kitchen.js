@@ -16,3 +16,23 @@ function setDate() {
 setInterval(setDate, 1000);
 
 setDate();
+
+
+function magnetMove() {
+    let allmagnets = document.querySelectorAll(".magnet");
+    if (allmagnets.length===0) {
+      let placedmagnets = document.querySelectorAll(".magnet-placed");
+      for (let i = (placedmagnets.length - 1); i >= 0; i--)
+        {
+          placedmagnets[i].className = "kitchen magnet";
+          placedmagnets[i].id = `mag-${i}`;
+        }
+  }
+  else {
+    for(let i = (allmagnets.length - 1); i >= 0; i--)
+    {
+        allmagnets[i].className = "kitchen magnet-placed";
+        allmagnets[i].id = "";
+    }
+  }
+}

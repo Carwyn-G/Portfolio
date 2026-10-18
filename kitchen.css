@@ -22,36 +22,6 @@
     height: 100%;
     z-index: 10;
 }
-#fridge:hover ~ #mag-1 {
-    transform: translate(0,0);
-}
-#fridge:hover ~ #mag-2 {
-    transform: translate(0,0);
-}
-#fridge:hover ~ #mag-3 {
-    transform: translate(0,0);
-}
-#fridge:hover ~ #mag-4 {
-    transform: translate(0,0);
-}
-#fridge:hover ~ #mag-5 {
-    transform: translate(0,0);
-}
-#fridge:hover ~ #mag-6 {
-    transform: translate(0,0);
-}
-#fridge:hover ~ #mag-7 {
-    transform: translate(0,0);
-}
-#fridge:hover ~ #mag-8 {
-    transform: translate(0,0);
-}
-#fridge:hover ~ #mag-9 {
-    transform: translate(0,0);
-}
-#fridge:hover ~ #mag-10 {
-    transform: translate(0,0);
-}
 
 #cabinet-3 {
     grid-area: 4 / 5 / 5 / 6;
@@ -96,43 +66,43 @@
 }
 
 
-#mag-1 {
+#mag-0 {
     transform: translate(10%, 30%);
 }
 
-#mag-2 {
+#mag-1 {
     transform: translate(2%, 25%);
 }
 
-#mag-3 {
+#mag-2 {
     transform: translate(-2%, 55%);
 }
 
-#mag-4 {
+#mag-3 {
     transform: translate(6%, 45%);
 }
 
-#mag-5 {
+#mag-4 {
     transform: translate(-5%, 30%);
 }
 
-#mag-6 {
+#mag-5 {
     transform: translate(-5%, 40%);
 }
 
-#mag-7 {
+#mag-6 {
     transform: translate(-2%, 40%);
 }
 
-#mag-8 {
+#mag-7 {
     transform: translate(-3%, 46%);
 }
 
-#mag-9 {
+#mag-8 {
     transform: translate(0%, 22%);
 }
 
-#mag-10 {
+#mag-9 {
     transform: translate(-4%, 30%);
 }
 
@@ -151,4 +121,14 @@
 
 #minute {
     transform-origin: 77.86% 12.5%;
+}
+
+.magnet-placed {
+    transform: translate(0 0);
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
 }

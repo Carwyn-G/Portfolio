@@ -15,14 +15,14 @@
 
 
 
-#coat {
+#don-coat {
     grid-area: 2 / 3 / 3 / 4;
     height: 80%;
     align-self: flex-end;
     z-index: 10;
 }
 
-#hat {
+#don-hat {
     grid-area: 2 / 4 / 3 / 5;
     z-index: 10;
 }
@@ -34,43 +34,49 @@
     z-index: 10;
 }
 
-#coat-on {
+#doff-coat {
     grid-area: 3 / 1 / 4 / 2;
     align-self: flex-start;
     z-index: 10;
 }
 
-#hat-on {
+#doff-hat {
     grid-area: 2 / 1 / 3 / 2;
     z-index: 10;
 }
 
-#worn-coat {
-    z-index: -1;
+#coat-hanging {
+    z-index: 1;
 }
-#coat-arm {
-    z-index: -1;
-}
-
-#coat:hover ~ #coat-hanging {
-    z-index: -1;
-}
-#coat:hover ~ #worn-coat {
-    z-index: 2;
-}
-#coat:hover ~ #coat-arm {
-    z-index: 2;
-}
-
-#worn-hat {
+#coat-worn {
     z-index: -1;
 }
 
-#hat:hover ~ #hat-hanging {
+#hat-hanging {
+    z-index: 1;
+}
+#hat-worn {
     z-index: -1;
 }
-#hat:hover ~ #worn-hat {
+
+#donned-coat {
+    z-index: 1;
+}
+#donned-arm {
     z-index: 2;
+}
+#doffed-coat {
+    z-index: -1;
+}
+#doffed-arm {
+    z-index: -1;
+}
+
+#donned-hat {
+    z-index: 1;
+}
+#doffed-hat {
+    z-index: -1;
 }
 
 #tv-screen {
@@ -78,4 +84,10 @@
 }
 #tv:hover ~ #tv-screen {
     z-index: 2;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
 }
