@@ -236,19 +236,26 @@
 
 #lamp {
     grid-area: 2 / 2 / span 1 / span 1;
-    z-index: 10;
+    z-index: 10;    
     align-self: end;
 }
+
+#lamp button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
 #lamp img {
     object-fit: fill;
     margin-bottom: 5%;
 }
 
-#lamp:hover ~ #lamplight {
-    z-index: 5;
-}
-#lamplight {
+#lamp-off {
     z-index: -1;
+}
+#lamp-on {
+    z-index: 2;
 }
 
 
