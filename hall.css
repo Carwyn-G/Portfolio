@@ -2,6 +2,7 @@
     display: grid;
     grid-template-columns: 1fr .55fr .5fr 2.75fr .5fr .4fr .6fr;
     grid-template-rows: 1fr .5fr 1fr 1fr;
+    overflow: hidden;
 }
 
 .hall {
@@ -18,7 +19,7 @@
     grid-area: 1 / 1 / 4 / 2;
 }
 #bedroom:hover ~ #closed-bed {
-    z-index: -1;
+    display: none;
 }
 
 #bathroom {
@@ -26,7 +27,7 @@
     grid-area: 1 / 7 / 4 / 8;
 }
 #bathroom:hover ~ #closed-bath {
-    z-index: -1;
+    display: none;
 }
 
 @keyframes growPlant {

@@ -63,13 +63,25 @@
         <div class="card" id="intro">
             <div class="info">
                 <h1>Welcome to my Portfolio Home!</h1>
-                <p>Hi! I'm Carwyn G, and as someone that has moved a lot and lived in several different places, the inspiration for my portfolio comes from all the many homes I've lived in. This house is not just one building, but a combination of homes I've lived in across three different countries.</p>
+                <p>Hi! I'm Carwyn G, a graphic design and web development student in Jönköping, Sweden. As someone that has moved a lot and lived in several different places, the inspiration for my portfolio comes from all the many homes I've lived in. This house is not just one building, but a combination of homes I've lived in across three different countries.</p>
                 <p>Just like with my design projects, each move brought with it something entirely new, but in each new home, I always still made it my own, and made the best of whatever new challenges that location brought.</p>
                 <p>There's plenty to explore here and I invite you to come in and look around, but if you want the quick version, keep scrolling to see just the highlights.</p>
             </div>
-            <img src="images/peeking me.png" alt="Carwyn G peeking in from the side of the frame and waving hello">
+            <div id="me">
+                <img id="portrait" src="images/peeking me.png" alt="Carwyn G peeking in from the side of the frame and waving hello">
+                <img id="bubble" src="images/bubble.png" alt="a speech bubble coming from Carwyn">
+                <p id="mobile">Heads up, while I've done my best to make this responsive and mobile friendly, I recommend checking this out on desktop for the full experience.</p>
+            </div>
         </div>
         <div class="card" id="rise">
+            <div class="info">
+                <h1>Rise Chocolate</h1>
+                <h3>The Brief</h3>
+                <p>Designing branding and packaging for a Canadian-based chocolate company with an emphasis on ethically sourced cacao used in creative flavor combinations. Their use of bold flavors called for equally bold branding and packaging, but that could be readily adapted to any new flavor combination.</p>
+                <h3>About the Design</h3>
+                <p>The name leant itself to both the sunrise-inspired color scheme and the radiant layout. The radiant layout was also chosen for being easily modular, so that all available flavors can be freely mixed and matched, and new flavors can be easily introduced to the system.</p>
+                <p>The tossed pattern of images makes for a vibrant, exciting wrapper that catches the eye on shelves, while remaining clear and compliant with Canadian bilingual labelling requirements.</p>
+            </div>
             <div class="carousel">
                 <button class="left" onclick="prevImg('rise')">
                 <img src="images/arrow.svg" alt="arrow icon pointing left" />
@@ -90,14 +102,6 @@
                 <button class="right" onclick="nextImg('rise')">
                 <img src="images/arrow.svg" alt="arrow icon pointing right" />
                 </button>
-            </div>
-            <div class="info">
-                <h1>Rise Chocolate</h1>
-                <h3>The Brief</h3>
-                <p>Designing branding and packaging for a Canadian-based chocolate company with an emphasis on ethically sourced cacao used in creative flavor combinations. Their use of bold flavors called for equally bold branding and packaging, but that could be readily adapted to any new flavor combination.</p>
-                <h3>About the Design</h3>
-                <p>The name leant itself to both the sunrise-inspired color scheme and the radiant layout. The radiant layout was also chosen for being easily modular, so that all available flavors can be freely mixed and matched, and new flavors can be easily introduced to the system.</p>
-                <p>The tossed pattern of images makes for a vibrant, exciting wrapper that catches the eye on shelves, while remaining clear and compliant with Canadian bilingual labelling requirements.</p>
             </div>
         </div>
         <div class="card">
@@ -137,17 +141,18 @@
             </div>
         </div>
         <div class="card">
-            <video width= 100% id="mana" controls>
-                <source src="images/mana/ad clip.mp4" type="video/mp4">
-                "Your browser doesn't support the video tag :("
-            </video>
             <div class="info">
                 <h1>Mana E-Bikes</h1>
                 <h3>The Brief</h3>
                 <p>Designing branding and developing a video ad campaign for an electric bike company wanting to appeal to people who aren't cyclists, seeking to emphasize the ease and effortlessness of their e-bikes.</p>
                 <h3>About the Design</h3>
                 <p>Just as the tagline says, the goal of this campaign was to make these e-bikes feel magical, to really show riding them as being akin to entering into a whole new world, one that feels peaceful and beautiful.</p>
-            </div>
+            </div>            
+            <video width= 100% id="mana" controls>
+                <source src="images/mana/ad clip.mp4" type="video/mp4">
+                "Your browser doesn't support the video tag :("
+            </video>
+
         </div>
         <div class="card">
             <div class="info">
@@ -186,6 +191,15 @@
             </div>
         </div>
         <div class="card">
+            <div class="info">
+                <h1>Author Kai Evan Sterling</h1>
+                <h3>The Brief</h3>
+                <p>Designing a cohesive visual identity for the website and book covers of Kai Evan Sterling, a new author of an urban fantasy novel series.</p>
+                <h3>About the Design</h3>
+                <p>This project was all about creating book covers and an author website that would draw readers in to want to explore more. Sterling's novels are richly layered with worldbuilding elements, and so I chose the layered papercut aesthetic to give that impression of there always being another layer to explore.</p>
+                <p>In particular the goal of the website was to not just be home to some links to purchase the books, but a place readers could access bonus content and character art to deepen their appreciation for the books.</p>
+                <p>This project is still a living project with updates to come as the stories are finished and publication is finalized.</p>
+            </div>            
             <div class="carousel">
                 <button class="left" onclick="prevImg('KES')">
                 <img src="images/arrow.svg" alt="arrow icon pointing left" />
@@ -196,15 +210,6 @@
                 <button class="right" onclick="nextImg('KES')">
                 <img src="images/arrow.svg" alt="arrow icon pointing right" />
                 </button>
-            </div>
-            <div class="info">
-                <h1>Author Kai Evan Sterling</h1>
-                <h3>The Brief</h3>
-                <p>Designing a cohesive visual identity for the website and book covers of Kai Evan Sterling, a new author of an urban fantasy novel series.</p>
-                <h3>About the Design</h3>
-                <p>This project was all about creating book covers and an author website that would draw readers in to want to explore more. Sterling's novels are richly layered with worldbuilding elements, and so I chose the layered papercut aesthetic to give that impression of there always being another layer to explore.</p>
-                <p>In particular I wanted the website to not just be home to some links to purchase the books, but a place readers could access bonus content and character art to deepen their appreciation for the books.</p>
-                <p>This project is still a living project with updates to come as the stories are finished and publication is finalized.</p>
             </div>
         </div>
     </main>

@@ -2,6 +2,7 @@
     display: grid;
     grid-template-columns: .5fr repeat(23, 1fr) .5fr;
     grid-template-rows: .5fr 1fr 1fr;
+    overflow: hidden;
 }
 .hero div {
     align-self: center;
@@ -252,10 +253,10 @@
 }
 
 #lamp-off {
-    z-index: -1;
+    display: none;
 }
 #lamp-on {
-    z-index: 2;
+    display: block;
 }
 
 

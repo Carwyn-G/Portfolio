@@ -2,6 +2,7 @@
     display: grid;
     grid-template-columns: 1fr .5fr .5fr .5fr 3.3fr .7fr;
     grid-template-rows: .5fr .7fr 1fr 1fr;
+    overflow: hidden;    
 }
 
 .foyer {
@@ -15,14 +16,14 @@
 
 
 
-#don-coat {
+#coathook {
     grid-area: 2 / 3 / 3 / 4;
     height: 80%;
     align-self: flex-end;
     z-index: 10;
 }
 
-#don-hat {
+#hathook {
     grid-area: 2 / 4 / 3 / 5;
     z-index: 10;
 }
@@ -34,56 +35,57 @@
     z-index: 10;
 }
 
-#doff-coat {
+#worn-coat {
     grid-area: 3 / 1 / 4 / 2;
     align-self: flex-start;
     z-index: 10;
 }
 
-#doff-hat {
+#worn-hat {
     grid-area: 2 / 1 / 3 / 2;
     z-index: 10;
 }
 
 #coat-hanging {
-    z-index: 1;
+    display: block;
 }
 #coat-worn {
-    z-index: -1;
+    display: none;
 }
 
 #hat-hanging {
-    z-index: 1;
+    display: block;
 }
 #hat-worn {
-    z-index: -1;
+    display: none;
 }
 
 #donned-coat {
-    z-index: 1;
+    display: block;
 }
 #donned-arm {
+    display: block;
     z-index: 2;
 }
 #doffed-coat {
-    z-index: -1;
+    display: none;
 }
 #doffed-arm {
-    z-index: -1;
+    display: none;
 }
 
 #donned-hat {
-    z-index: 1;
+    display: block;
 }
 #doffed-hat {
-    z-index: -1;
+    display: none;
 }
 
 #tv-screen {
-    z-index: -1;
+    display: none;
 }
 #tv:hover ~ #tv-screen {
-    z-index: 2;
+    display: block;
 }
 
 button {

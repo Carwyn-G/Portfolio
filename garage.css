@@ -2,6 +2,7 @@
     display: grid;
     grid-template-columns: 1.42fr 2fr 3fr 2fr;
     grid-template-rows: 1.8fr 1fr 1fr;
+    overflow: hidden;
 }
 
 .garage {
@@ -65,6 +66,6 @@
 }
 
 #door:hover ~ #closed-door {
-    z-index: -1;
+    display: none;
 }
 

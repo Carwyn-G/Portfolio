@@ -2,6 +2,7 @@
     display: grid;
     grid-template-columns: 12% 8% 9% 23% 20% 13% 15%;
     grid-template-rows: 10% 10% 7% 6% 6% 6% 55%;
+    overflow: hidden;
 }
 
 .study {
@@ -18,7 +19,7 @@
     z-index: 10;
 }
 #laptop:hover ~ #laptop-on {
-    z-index: 1;
+    display: block;
 }
 
 #monitor {
@@ -26,7 +27,7 @@
     z-index: 10;
 }
 #monitor:hover ~ #monitor-on {
-    z-index: 1;
+    display: block;
 }
 
 #bonsai {
@@ -34,7 +35,7 @@
     z-index: 10;
 }
 #bonsai:hover ~ #flowers {
-    z-index: 2;
+    display: block;
 }
 
 #link {
@@ -43,13 +44,13 @@
 }
 
 #monitor-on {
-    z-index: -1;
+    display: none;
 }
 #laptop-on {
-    z-index: -1;
+    display: none;
 }
 #flowers {
-    z-index: -1;
+    display: none;
 }
 
 #me {

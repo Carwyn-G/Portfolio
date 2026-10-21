@@ -1,7 +1,8 @@
 .hero {
     display: grid;
     grid-template-columns: .825fr .5fr .5fr .6fr .5fr .5fr .5fr 1fr;
-    grid-template-rows: .5fr .5fr .75fr .5fr .5fr;
+    grid-template-rows: .5fr .5fr .75fr .5fr .5fr;    
+    overflow: hidden;
 }
 
 .kitchen {
@@ -28,7 +29,7 @@
     z-index: 10;
 }
 #cabinet-3:hover ~ #cab-3 {
-    z-index: -1;
+    display: none;
 }
 
 #cabinet-5 {
@@ -36,7 +37,7 @@
     z-index: 10;
 }
 #cabinet-5:hover ~ #cab-5 {
-    z-index: -1;
+    display: none;
 }
 
 #TL-cabinet {
@@ -44,7 +45,7 @@
     z-index: 10;
 }
 #TL-cabinet:hover ~ #topleft-cab {
-    z-index: -1;
+    display: none;
 }
 
 #TR-cabinet {
@@ -52,7 +53,7 @@
     z-index: 10;
 }
 #TR-cabinet:hover ~ #topright-cab {
-    z-index: -1;
+    display: none;
 }
 
 
