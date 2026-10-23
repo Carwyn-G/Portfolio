@@ -1,3 +1,8 @@
+let loadingScreen = document.querySelector(".loadingScreen");
+window.addEventListener('load', function() {
+    loadingScreen.style.display = 'none';
+})
+
 function hamburger() {
   let x = document.getElementById("navbar");
   if (x.className === "topnav default") {
