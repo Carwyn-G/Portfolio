@@ -69,3 +69,6 @@
     display: none;
 }
 
+#method {
+    justify-content: start;
+}

@@ -16,7 +16,7 @@
             <div id="bathroom"></div>
             <div id="monstera"><button onclick="monsteraGrow()"><img class="transparent" src="images/transparent.png" alt="a small monstera potted plant"></button></div>
             <div id="fern"><button onclick="fernGrow()"><img class="transparent" src="images/transparent.png" alt="a small fern potted plant"></button></div>
-            <img class="hall" id="backgrgound" src="images/hall layers/0 background.png" alt="a hall with a gallery wall displaying several different branding images for the Greater Victoria Zoo">
+            <img class="hall" id="background" src="images/hall layers/0 background.png" alt="a hall with a gallery wall displaying several different branding images for the Greater Victoria Zoo">
             <img class="hall" id="closed-bath" src="images/hall layers/1 bathroom door.png" alt="a simple door">
             <img class="hall" id="closed-bed" src="images/hall layers/2 bedroom door.png" alt="a simple door">
             <img class="hall" id="me" src="images/hall layers/3 me.png" alt="Carwyn Gilbert in a green shirt and denim pants">
@@ -49,23 +49,44 @@
         <div class="portfolio-page">
             <div class="info">
                 <h1>Greater Victoria Zoo</h1>
-                <p></p>
+                <p>This project was particularly fun for me as I love zoos and have visited over two dozen across different countries. So in designing for this zoo I used that firsthand experience to ensure purposeful, thoughtful decisions in my design process.</p>
+                <p>To appeal to young audiences, the branding makes heavy use of fun, bright colors as well as a simplified illustrations that can be used on signage throughout the zoo. While in a social media marketing campaign and other uses the use of animal photographs is styled to focus wholly on the animals, and still makes vibrant use of the brand's bold colors.</p>
             </div>
-            <img src="images/GVZ/cover.jpg" alt="">
-            <img src="images/GVZ/map.jpg" alt=""/>
+            <img class="media" src="images/GVZ/cover.jpg" alt="">
+            <div class="carousel media">
+                <button class="left" onclick="prevImg('zoo')">
+                    <img src="images/arrow.svg" alt="arrow icon pointing left" />
+                </button>
+                <img id="zoo-left" class="zoo-three" src="images/GVZ/animals.png" alt=""/>
+                <img id="zoo-top" class="zoo-one" src="images/GVZ/cover.jpg" alt=""/>
+                <img id="zoo-right" class="zoo-two" src="images/GVZ/campaign9.jpg" alt=""/>
+                <button class="right" onclick="nextImg('zoo')">
+                    <img src="images/arrow.svg" alt="arrow icon pointing right" />
+                </button>
+            </div>
             <div class="info">
                 <h1>Method</h1>
-                <p></p>
+                <p>Pictograms for each animal, as well as the cover and map base were created in Illustrator before using InDesign to ensure the remaining informational content was well organized. Animal photographs were edited in Photoshop to isolate them from the background for use in the social media campaign. This project was created entirely with human creativity and skill, without the use of AI.</p>
             </div>
             <div class="info">
                 <h1>Logo and Colors</h1>
-                <p></p>
+                <p>Using a similar style as the other animal pictograms, I developed a layout combining a penguin and an arctic fox to resemble the letters G and V to match the zoo's name. The brand makes use of several official colors, with the primary colors being a vivid green and rich brown that invoke ideas of nature while staying fun.</p>
             </div>
-            <img src="images/GVZ/stacked logomark.png" alt=""/>
-            <img src="images/GVZ/campaign.jpg" alt=""/>
+            <img class="media" src="images/GVZ/stacked logomark.png" alt=""/>
+            <div class="carousel media">
+                <button class="left" onclick="prevImg('alt')">
+                    <img src="images/arrow.svg" alt="arrow icon pointing left" />
+                </button>
+                <img id="alt-left" class="alt-three" src="images/GVZ/zoo map 2.jpg" alt=""/>
+                <img id="alt-top" class="alt-one" src="images/GVZ/map.jpg" alt=""/>
+                <img id="alt-right" class="alt-two" src="images/GVZ/zoo map.png" alt=""/>
+                <button class="right" onclick="nextImg('alt')">
+                    <img src="images/arrow.svg" alt="arrow icon pointing right" />
+                </button>
+            </div>
             <div class="info">
                 <h1>Final Thoughts</h1>
-                <p></p>
+                <p>It was especially important to me to make the map design as accessible as possible, particularly keeping young children in mind. To that end, pictograms were combined with text labels to add an extra layer of guidance for those not yet reading. Color-coding was combined with shape-based icons to further clarify information while staying accessible to those with colorblindness.</p>
             </div>
         </div>
     </main>

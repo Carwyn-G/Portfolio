@@ -94,6 +94,24 @@ function nextImg(a){
             two[0].id = "KES-right";
             three[0].id = "KES-left";
         }
+    } else if (a === "alt") {
+        console.log("clicked")
+        let one = document.getElementsByClassName("alt-one");
+        let two = document.getElementsByClassName("alt-two");
+        let three = document.getElementsByClassName("alt-three");
+        if (one[0].id === "alt-top") {
+            one[0].id = "alt-left";
+            two[0].id = "alt-top";
+            three[0].id = "alt-right";
+        } else if (one[0].id === "alt-left") {
+            one[0].id = "alt-right";
+            two[0].id = "alt-left";
+            three[0].id = "alt-top";
+        } else if (one[0].id === "alt-right") {
+            one[0].id = "alt-top";
+            two[0].id = "alt-right";
+            three[0].id = "alt-left";
+        }
     }
 }
 
@@ -102,7 +120,6 @@ function prevImg(a){
         let one = document.getElementsByClassName("rise-one");
         let two = document.getElementsByClassName("rise-two");
         let three = document.getElementsByClassName("rise-three");
-        console.log(one[0].id);
         if (one[0].id === "rise-top") {
             one[0].id = "rise-right";
             two[0].id = "rise-left";
@@ -120,7 +137,6 @@ function prevImg(a){
         let one = document.getElementsByClassName("athena-one");
         let two = document.getElementsByClassName("athena-two");
         let three = document.getElementsByClassName("athena-three");
-        console.log(one[0].id);
         if (one[0].id === "athena-top") {
             one[0].id = "athena-right";
             two[0].id = "athena-left";
@@ -138,7 +154,6 @@ function prevImg(a){
         let one = document.getElementsByClassName("zoo-one");
         let two = document.getElementsByClassName("zoo-two");
         let three = document.getElementsByClassName("zoo-three");
-        console.log(one[0].id);
         if (one[0].id === "zoo-top") {
             one[0].id = "zoo-right";
             two[0].id = "zoo-left";
@@ -156,7 +171,6 @@ function prevImg(a){
         let one = document.getElementsByClassName("KES-one");
         let two = document.getElementsByClassName("KES-two");
         let three = document.getElementsByClassName("KES-three");
-        console.log(one[0].id);
         if (one[0].id === "KES-top") {
             one[0].id = "KES-right";
             two[0].id = "KES-left";
@@ -169,6 +183,25 @@ function prevImg(a){
             one[0].id = "KES-left";
             two[0].id = "KES-top";
             three[0].id = "KES-right";
+        } else {console.log("how did this happen?")}
+    } else if (a === "alt") {
+        console.log("clicked")
+        let one = document.getElementsByClassName("alt-one");
+        let two = document.getElementsByClassName("alt-two");
+        let three = document.getElementsByClassName("alt-three");
+        console.log(one[0].id);
+        if (one[0].id === "alt-top") {
+            one[0].id = "alt-right";
+            two[0].id = "alt-left";
+            three[0].id = "alt-top";
+        } else if (one[0].id === "alt-left") {
+            one[0].id = "alt-top";
+            two[0].id = "alt-right";
+            three[0].id = "alt-left";
+        } else if (one[0].id === "alt-right") {
+            one[0].id = "alt-left";
+            two[0].id = "alt-top";
+            three[0].id = "alt-right";
         } else {console.log("how did this happen?")}
     } else {console.log ("how did you get here?")}
 }

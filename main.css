@@ -228,6 +228,8 @@ footer {
     margin: 2rem;    
     text-align: center;
     align-self: start;
+    min-height: 25vw;
+    justify-content: center;
 }
 
 #rise {
@@ -242,6 +244,7 @@ footer {
     align-items: center;
 }
 .carousel img {
+    width: 100%;
     grid-area: 1 / 2 / span 1 /span 1;
 }
 .carousel a {
@@ -308,6 +311,16 @@ footer {
     display: none;
 }
 
+#alt-top {
+    order: 1;
+}
+#alt-left {
+    display: none;
+}
+#alt-right {
+    display: none;
+}
+
 #bubble {
     display: none;
 }
@@ -322,9 +335,11 @@ footer {
     column-gap: 5%;
 }
 
-.portfolio-page img {
+.media {
     width: 100%;
+    max-width: 50vw;
     grid-row: span 2;
+    grid-column: span 1;
 }
 
 /* Mobile View */
