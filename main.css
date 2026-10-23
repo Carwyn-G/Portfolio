@@ -511,6 +511,9 @@ footer {
 
 /* Mobile View */
 @media screen and (max-width: 800px) {
+    #loading-text {
+        margin-top: 20%;
+    }
     .topnav {
         justify-content: end;
     }
@@ -542,7 +545,6 @@ footer {
 
     #submenu-list {
         position: relative;
-        top: 13rem;
     }
 
     #home-logo {
