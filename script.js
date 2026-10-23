@@ -1,7 +1,15 @@
 let loadingScreen = document.querySelector(".loadingScreen");
 window.addEventListener('load', function() {
     loadingScreen.style.display = 'none';
+    window.scrollTo(0, 0);
 })
+
+// function loaderHide() {
+//     loadingScreen.style.display = 'none';
+//     window.scrollTo(0, 0);
+// }
+// setTimeout(loaderHide, 20000);
+
 
 function hamburger() {
   let x = document.getElementById("navbar");
