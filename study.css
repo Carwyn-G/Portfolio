@@ -59,3 +59,7 @@
 #head {
     z-index: 2;
 }
+
+#final {
+    justify-content: start;
+}
