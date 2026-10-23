@@ -31,7 +31,15 @@ main {
 }
 
 footer {
-    margin: 1%;
+    width: 100%;
+    padding: 1%;
+    margin-top: 1%;
+}
+footer p {
+    color: #24332c;
+    font-size: small;
+    margin: 0;
+    width: 100%;
 }
 
 /* Nav */
@@ -82,9 +90,11 @@ nav {
 }
 
 .topnav button {
-    font-family: sans-serif;
-    font-weight: 700;
+    font-family: "Capriola", sans-serif;
+    font-weight: 500;
+    font-style: normal;
     font-size: x-large;
+    color: #3c5c4d;
     text-transform: uppercase;
     margin: 0;
     padding-left: 2em;
@@ -146,6 +156,9 @@ nav {
 #submenu li {
     margin: 0;
     margin-top: .5em;
+    font-family: "Capriola", sans-serif;
+    font-weight: 500;
+    font-style: normal;
     font-size: large;
 }
 
@@ -158,9 +171,10 @@ nav {
 
 ul a:link,
 ul a:visited {
-    color: black;
-    font-family: sans-serif;
-    font-weight: 700;
+    color: #3C5C4D;
+    font-family: "Capriola", sans-serif;
+    font-weight: 500;
+    font-style: normal;
     font-size: x-large;
     text-decoration: none;
     text-transform: uppercase;
@@ -182,11 +196,13 @@ ul a:visited {
 
 
 h1 {
-    font-family: sans-serif;
+    font-family: "Capriola", sans-serif;
     font-weight: 500;
+    font-style: normal;
     margin: 0;
     margin-bottom: .5em;
     text-align: center;
+    color: #3c5c4d;
 }
 
 h3 {
@@ -205,6 +221,7 @@ p {
     margin-inline: auto;
     text-indent: 1em;
     font-size: large;
+    color: #24332c;
 }
 
 footer {
@@ -266,11 +283,13 @@ footer {
     justify-self: end;
     padding: 0;
     border-radius: 100%;
-    height: 2rem;
-    width: 2rem;
+    height: 3rem;
+    width: 3rem;
     padding: .25rem;
     order: 2;
     cursor: pointer;
+    background-color: #3c5c4d;
+    border: none;
 }
 
 .carousel .left {
@@ -372,8 +391,9 @@ footer {
         align-items: center;
     }
     .expanded ul button {
-        font-family: sans-serif;
-        font-weight: 700;
+        font-family: "Capriola", sans-serif;
+        font-weight: 500;
+        font-style: normal;
         font-size: x-large;
         margin: 0;
         padding: 0;
